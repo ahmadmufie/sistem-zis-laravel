@@ -1,64 +1,122 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+🕌 Sistem Informasi Manajemen ZIS (Zakat, Infaq, Sedekah)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistem Informasi Manajemen ZIS adalah aplikasi berbasis web yang dikembangkan menggunakan Framework Laravel. Aplikasi ini dirancang untuk mendigitalisasi proses pengelolaan dana Zakat, Infaq, dan Sedekah pada lembaga amil zakat atau masjid, memastikan pencatatan yang transparan, akuntabel, dan efisien.
 
-## About Laravel
+✨ Fitur Utama
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Role-Based Access Control (RBAC): Pemisahan hak akses yang tegas antara Admin (Akses Penuh) dan Amil (Staf Operasional).
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Dashboard Interaktif: Menampilkan statistik real-time mengenai total pemasukan, penyaluran, dan saldo kas akhir.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Manajemen Data Master: Pengelolaan data Muzakki (Donatur) dan Mustahiq (Penerima Manfaat).
 
-## Learning Laravel
+Pencatatan Transaksi: Pencatatan arus kas masuk (Zakat Fitrah, Zakat Mal, Infaq, Sedekah) dan arus kas keluar (Penyaluran dana).
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Generate Laporan: Pembuatan laporan keuangan periodik yang rapi dan Printer-Friendly (siap cetak).
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+📸 Screenshots
 
-## Laravel Sponsors
+Note: Tambahkan screenshot aplikasi Anda di sini dengan mengganti URL gambar.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Halaman Login
 
-### Premium Partners
+Halaman Dashboard
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Transaksi Masuk
 
-## Security Vulnerabilities
+Laporan Keuangan
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+🚀 Panduan Instalasi (Local Development)
+
+Ikuti langkah-langkah di bawah ini untuk menjalankan proyek ini di komputer lokal Anda.
+
+Persyaratan Sistem
+
+Pastikan Anda telah menginstal perangkat lunak berikut:
+
+PHP >= 8.0
+
+Composer
+
+MySQL (melalui XAMPP/Laragon/dll)
+
+Git
+
+Langkah-langkah Instalasi
+
+Clone Repositori
+
+git clone [https://github.com/USERNAME_ANDA/sistem-zis-laravel.git](https://github.com/USERNAME_ANDA/sistem-zis-laravel.git)
+cd sistem-zis-laravel
+
+
+Instalasi Dependencies (Library)
+
+composer install
+
+
+Pengaturan Environment
+Salin file .env.example menjadi .env.
+
+cp .env.example .env
+
+
+Buka file .env dan sesuaikan konfigurasi database Anda:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nama_database_anda
+DB_USERNAME=root
+DB_PASSWORD=
+
+
+Generate Application Key
+
+php artisan key:generate
+
+
+Migrasi Database & Seeder (Data Awal)
+(Pastikan Anda sudah membuat database kosong di MySQL sesuai nama di file .env)
+
+php artisan migrate --seed
+
+
+Jalankan Aplikasi
+
+php artisan serve
+
+
+Aplikasi dapat diakses melalui browser pada alamat: http://localhost:8000
+
+🔐 Akun Default (Testing)
+
+Gunakan kredensial berikut untuk masuk ke dalam sistem. (Data ini di-generate melalui Database Seeder).
+
+1. Akun Admin
+
+Email: admin@example.com (Sesuaikan dengan email di seeder Anda)
+
+Password: password
+
+2. Akun Amil
+
+Email: amil@example.com (Sesuaikan dengan email di seeder Anda)
+
+Password: password
+
+👨‍💻 Penulis / Pengembang
+
+[Nama Anda] - Fullstack Developer - Profil GitHub Anda
+
+📄 Lisensi
+
+Proyek ini bersifat Open-Source dan dilisensikan di bawah MIT License.
