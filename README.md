@@ -1,60 +1,33 @@
-🕌 Sistem Informasi Manajemen ZIS (Zakat, Infaq, Sedekah)
+# 🕌 Sistem Informasi Manajemen ZIS (Zakat, Infaq, Sedekah)
 
-Sistem Informasi Manajemen ZIS adalah aplikasi berbasis web yang dikembangkan menggunakan Framework Laravel. Aplikasi ini dirancang untuk mendigitalisasi proses pengelolaan dana Zakat, Infaq, dan Sedekah pada lembaga amil zakat atau masjid, memastikan pencatatan yang transparan, akuntabel, dan efisien.
+> Sistem Informasi Manajemen ZIS adalah aplikasi berbasis web yang dikembangkan menggunakan Framework Laravel. Aplikasi ini dirancang untuk mendigitalisasi proses pengelolaan dana Zakat, Infaq, dan Sedekah pada lembaga amil zakat atau masjid, memastikan pencatatan yang transparan, akuntabel, dan efisien.
 
-✨ Fitur Utama
+## ✨ Fitur Utama
 
-Role-Based Access Control (RBAC): Pemisahan hak akses yang tegas antara Admin (Akses Penuh) dan Amil (Staf Operasional).
-
-Dashboard Interaktif: Menampilkan statistik real-time mengenai total pemasukan, penyaluran, dan saldo kas akhir.
-
-Manajemen Data Master: Pengelolaan data Muzakki (Donatur) dan Mustahiq (Penerima Manfaat).
-
-Pencatatan Transaksi: Pencatatan arus kas masuk (Zakat Fitrah, Zakat Mal, Infaq, Sedekah) dan arus kas keluar (Penyaluran dana).
-
-Generate Laporan: Pembuatan laporan keuangan periodik yang rapi dan Printer-Friendly (siap cetak).
-
-📸 Screenshots
-
-Note: Tambahkan screenshot aplikasi Anda di sini dengan mengganti URL gambar.
-
-Halaman Login
-
-Halaman Dashboard
+* ** Role-Based Access Control (RBAC):** Pemisahan hak akses yang tegas antara Admin (Akses Penuh) dan Amil (Staf Operasional).
+* ** Dashboard Interaktif:** Menampilkan statistik real-time mengenai total pemasukan, penyaluran, dan saldo kas akhir.
+* ** Manajemen Data Master:** Pengelolaan data Muzakki (Donatur) dan Mustahiq (Penerima Manfaat).
+* ** Pencatatan Transaksi:** Pencatatan arus kas masuk (Zakat Fitrah, Zakat Mal, Infaq, Sedekah) dan arus kas keluar (Penyaluran dana).
+* ** Generate Laporan:** Pembuatan laporan keuangan periodik yang rapi dan Printer-Friendly (siap cetak).
 
 
-
-
-
-Transaksi Masuk
-
-Laporan Keuangan
-
-
-
-
-
-🚀 Panduan Instalasi (Local Development)
+## 🚀 Panduan Instalasi (Local Development)
 
 Ikuti langkah-langkah di bawah ini untuk menjalankan proyek ini di komputer lokal Anda.
 
-Persyaratan Sistem
+# Persyaratan Sistem
 
 Pastikan Anda telah menginstal perangkat lunak berikut:
 
-PHP >= 8.0
+* PHP >= 8.0
+* Composer
+* MySQL (melalui XAMPP/Laragon/dll)
 
-Composer
+# Langkah-langkah Instalasi
 
-MySQL (melalui XAMPP/Laragon/dll)
-
-Git
-
-Langkah-langkah Instalasi
-
-Clone Repositori
-
-git clone [https://github.com/USERNAME_ANDA/sistem-zis-laravel.git](https://github.com/USERNAME_ANDA/sistem-zis-laravel.git)
+### 1. Kloning Repositori
+```bash
+git clone [https://github.com/ahmadmufie/sistem-zis-laravel.git](https://github.com/ahmadmufie/sistem-zis-laravel.git)
 cd sistem-zis-laravel
 
 
